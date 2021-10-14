@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: #0455BF;
+    --second-color: #266AA6;
+    --three-color: #034873;
+    --four-color: #1F5373;
+    --five-color: #0d0d0d;
+    --height-navbar: 4rem;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Utilidades*/
+
+.ml-1 {
+    margin-left: 20px;
+}
+
+.mb-1 {
+    margin-bottom: 20px;
+}
+
+.mt-1 {
+    margin-top: 20px;
+}
+
+.codigos {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+}
+
+.navbar {
+    height: var(--height-navbar);
+    width: 100%;
+    background-color: var(--second-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: .5rem;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu {
+    margin: auto 0px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.section-html {
+    height: auto;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 1.5rem 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-section {
+    margin: 15px 0px 20px 0px;
+}
+
+.title-section h2 {
+    font-size: 35px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.section-text h3 {
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+.section-text h3.none-style {
+    font-size: auto;
+    margin: auto;
+}
+
+/*Componentes*/
+.codigo {
+    width: 60%;
+    overflow-x: scroll;
+    background-color: #161414;
+    padding: 1rem;
+}
+
+.codigo-text {
+    display: block;
+    color: rgb(236, 35, 0);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formateo {
+    font-size: 18px;
+    float: left;
+}

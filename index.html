@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Tipografia Open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1>Hola mundo</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-html">
+        <div class="container">
+            <div class="title-section">
+                <h2>La Historia de HTML</h2>
+            </div>
+            <div class="section-text">
+                <p>HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace
+                    referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve
+                    de referencia del software que conecta con la elaboración de páginas web en sus diferentes
+                    versiones, define una estructura básica y un código (denominado código HTML) para la definición
+                    de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un
+                    estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la
+                    estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su
+                    escritura e interpretación. HTML se considera el lenguaje web más importante siendo su invención
+                    crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que
+                    se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han
+                    adoptado.</p>
+
+                <h3>Filosifia</h3>
+                <p>El lenguaje HTML basa su filosofía de desarrollo en la diferenciación. Para añadir un elemento
+                    externo a la página (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el
+                    código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante
+                    texto. De este modo, la página web contiene solamente texto mientras que recae en el navegador web
+                    (interpretador del código) la tarea de unir todos los elementos y visualizar la página final. Al ser
+                    un estándar, HTML busca ser un lenguaje que permita que cualquier página web escrita en una
+                    determinada versión, pueda ser interpretada de la misma forma (estándar) por cualquier navegador web
+                    actualizado.</p>
+            </div>
+
+            <div class="title-section">
+                <h2>Estructura del Documento</h2>
+            </div>
+
+            <div class="section-text">
+                <p>Una página web está formada por una serie de páginas enlazadas entre sí, es decir, vamos a tener una
+                    serie de ficheros y cada uno de esos ficheros va a contener texto, imágenes, etc. Así que lo primero
+                    que deberíamos hacer es un boceto en papel con todo lo que va a contener el documento. Una vez claro
+                    este contenido hay que pensar en la estructura de la página y en la organización de los ficheros.
+                </p>
+                <br>
+                <p> Normalmente hay una página principal, que se suele llamar index.html, con enlaces a otras páginas,
+                    que tendrán a su vez otros enlaces y así sucesivamente. Es importante que todo esté bien organizado
+                    tanto para que a un usuario le resulte cómodo navegar por ella, como para que al autor le sea fácil
+                    poder modificarla o añadir información.</p>
+                <br>
+                <p>Un documento HTML está formado por tres partes:</p>
+                <br>
+                <ol class="ml-1">
+                    <li>Una línea que contiene información sobre la versión de HTML (no siempre),</li>
+                    <li>Una cabecera (delimitada por el elemento HEAD), y</li>
+                    <li>Un cuerpo, con el contenido del documento (delimitado por el elemento BODY)</li>
+                </ol>
+                <br>
+                <p>Todo el documento tiene que ir entre las etiquetas &lt;HTML&gt; &lt;/HTML&gt;</p>
+                <br>
+                <p>El elemento &lt;HEAD&gt;&lt;/HEAD&gt; contiene información sobre el documento actual, como el
+                    título,palabras clave que utilizan los motores de búsqueda, y otros datos que no se consideran parte
+                    del contenido de ldocumento porque no se visualizan en el navegador. Sin embargo, pueden poner esta
+                    información a disposición de los usuarios a través de otros mecanismos.</p>
+
+                <p>Todos los documentos HTML deben tener un elemento &lt;TITLE&gt;&lt;/TITLE&gt; en la sección HEAD. Los
+                    autores
+                    deberían utilizar el elemento TITLE para identificar los contenidos de un documento, con lo que se
+                    aconseja poner títulos que de verdad reflejen con claridad el contenido del documento. Este título
+                    puede contener caracteres, pero no trozos de código.</p>
+
+                <div class="section-codigo">
+                    <header>
+                        <h3>Codigo mas Simple</h3>
+                    </header>
+                    <div class="codigo">
+                        <span class="codigo-text">&lt;!DOCTYPE html&gt;</span>
+                        <span class="codigo-text">&lt;html&gt;</span>
+                        <span class="codigo-text">&lt;head&gt;</span>
+                        <span class="codigo-text">&lt;title&gt;Este es el titulo de la pagina web&lt;/title&gt;</span>
+                        <span class="codigo-text">&lt;/head&gt;</span>
+                        <span class="codigo-text">&lt;body&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;/body&gt;</span>
+                        <span class="codigo-text">&lt;/html&gt;</span>
+                    </div>
+                    <br>
+                    <p>Este sera el codigo mas basico que hay que aprender</p>
+                    <br>
+                    <p class="mb-1">Voy a proceder a explicar este codigo linea por linea</p>
+                    <h3>La declaración &lt;! DOCTYPE&gt; </h3>
+                    <p>La
+                        <mark>
+                            &lt;!DOCTYPE&gt;</mark> declaración representa el tipo de documento y ayuda a los
+                        navegadores a
+                        mostrar las
+                        páginas web correctamente.</p>
+                    <p>Solo debe aparecer una vez, en la parte superior de la página (antes de cualquier etiqueta HTML).
+                    </p>
+                    <br>
+                    <p>La <mark> &lt;!DOCTYPE&gt;</mark>declaración no distingue entre mayúsculas y minúsculas.</p>
+                    <p class="mb-1">La<mark> &lt;!DOCTYPE&gt;</mark>declaración para HTML5 es:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text">&lt;!DOCTYPE html&gt;</span>
+                    </div>
+
+                    <h3 class="mb-1">Encabezados HTML</h3>
+                    <p>Los Encabezados HTML se definen con las etiquetas &lt;h1&gt; asta el &lt;h6&gt; </p>
+                    <p class="mb-1"> &lt;h1&gt; define el Encabezado mas importante y el &lt;h6&gt;.El menos importante
+                        Aqui un Ejemplo.</p>
+
+                    <div class="encabezados">
+                        <h1>Soy un h1</h1>
+                        <h2>Soy un h2</h2>
+                        <h3 class="none-style">Soy un super feoh3</h3>
+                        <h4>Soy un h4</h4>
+                        <h5>Soy un h5</h5>
+                        <h6>Soy un h6</h6>
+                    </div>
+
+                    <p class="mt-1">El codigo de seria el siguente:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;h1&gt;Soy un h1&lt;/h1&gt;</span>
+                        <br>
+                        <span class="codigo-text"> &lt;h2&gt;Soy un h2&lt;/h2&gt;</span>
+                        <br>
+                        <span class="codigo-text"> &lt;h3&gt;Soy un h3&lt;/h3&gt;</span>
+                        <br>
+                        <span class="codigo-text"> &lt;h4&gt;Soy un h4&lt;/h4&gt;</span>
+                        <br>
+                        <span class="codigo-text"> &lt;h5&gt;Soy un h5&lt;/h5&gt;</span>
+                        <br>
+                        <span class="codigo-text"> &lt;h6&gt;Soy un h6&lt;/h6&gt;</span>
+                    </div>
+
+                    <h3>Párrafos HTML</h3>
+                    <p>los párrafos de definen con la etiqueta &lt;p&gt;</p>
+
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;p&gt;Soy una etiqueta p&lt;/p&gt;</span>
+                        <br>
+                        <span class="codigo-text"> &lt;p&gt;Soy una etiqueta p&lt;/p&gt;</span>
+                    </div>
+
+                    <p>Después en el curso vamos a ver en profundidad los párrafos, pero por el momento tenemos esta
+                        etiqueta.</p>
+
+                    <h3>Enlaces HTML</h3>
+                    <p class="mb-1">Los enlaces en HTML se definen con la etiqueta &lt;a&gt; Vamos a ver un Ejemplo:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;a href="https://www.google.com/"&gt;Link de
+                            google&lt;/a&gt;</span>
+                    </div>
+                    <p>El destino del link se define con el atributo <mark>href</mark> </p>
+                    <p>Los atributos se utilizan para proporcionar información adicional sobre los elementos
+                        HTML</p>
+                    <p>En otro capitulo de aprendera mas sobre los enlaces y los tipos que hay</p>
+
+                    <h3>Imagenes en HTML</h3>
+                    <p>Las Imagenes en HTML se definen con la etiqueta. <mark>&lt;img&gt;</mark></p>
+                    <p class="mb-1">El origen del archivo (<mark>src</mark>), el texto alternativo (<mark>alt</mark>)
+                        <mark>width</mark> <mark>height</mark> (Estos 2 ultimos sirven para dar ancho y el alto a la
+                        imagen</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;a href="https://www.google.com/"&gt;Link de
+                            google&lt;/a&gt;</span>
+                    </div>
+
+                    <div class="title-section">
+                        <h2>¿Como ver el codigo Fuente HTML?</h2>
+                    </div>
+
+                    <p>¿Alguna vez te has preguntado Como se puede ver el codigo fuente de una pagina web?</p>
+
+                    <h3>Ver código fuente HTML:</h3>
+                    <p class="mb-1">Haga clic con el botón derecho en una página HTML y seleccione "Ver código fuente de
+                        la página"
+                        (en Chrome) o "Ver código fuente" (en Edge), o similar en otros navegadores. Esto abrirá una
+                        ventana que contiene el código fuente HTML de la página.</p>
+                    <p class="mb-1">Este es la ventana que sale en navegador Opera GX</p>
+                    <img src="./img/ver-codigo-fuente.png" alt="Ventana Inspeccionar en Opera GX" class="mb-1">
+                    <p class="mb-1">Esta es la ventana que sale en Google</p>
+                    <img src="./img/ver-codigo-fuente-google.png" alt="Ventana Inspeccionar en Google">
+                    <h3>Inspeccionar un elemento HTML:</h3>
+
+                    <p>Haga clic con el botón derecho en un elemento (o un área en blanco) y elija "Inspeccionar" o
+                        "Inspeccionar elemento" para ver de qué elementos están compuestos (verá tanto el HTML como el
+                        CSS). También puede editar el HTML o CSS sobre la marcha en el panel Elementos o Estilos que se
+                        abre.</p>
+                    <br>
+
+                    <p class="mb-1">Este es la ventana que sale en navegador Opera GX</p>
+                    <img src="./img/inpecionar-elemento-opera.png"
+                        alt="Ventana Inspeccionar un elemento especifico en Opera GX" class="mb-1">
+
+                    <p class="mb-1">Esta es la ventana que sale en Google</p>
+                    <img src="/img/inpecionar-elemento.png" alt="Ventana Inspeccionar un elemento especifico en Google">
+                    <div class="title-section">
+                        <h2>Editores de texto</h2>
+                    </div>
+                    <p>Las paginas web se pueden crear con editores de texto profesionales</p>
+                    <br>
+                    <p>Sin embargo, para aprender HTML lo más recomendable es usar el Bloc de notas y después con el
+                        tiempo pasar a usar un editor de texto mucho mejor equipado no tan solo para programar HTML</p>
+                    <br>
+                    <p class="mb-1">A continuación, vamos hacer los pasos básicos para visualizar el código que estamos
+                        escribiendo
+                    </p>
+                    <p>Primero vamos abrir en bloc de notas, después vamos es escribir un poco de HTML para probar
+                        Este es el código que se usara</p>
+
+                    <br>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text">&lt;!DOCTYPE html&gt;</span>
+                        <span class="codigo-text">&lt;html&gt;</span>
+                        <span class="codigo-text">&lt;head&gt;</span>
+                        <span class="codigo-text">&lt;title&gt;Este es el titulo de la pagina web&lt;/title&gt;</span>
+                        <span class="codigo-text">&lt;/head&gt;</span>
+                        <span class="codigo-text">&lt;body&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;h1&gt;Soy un titulo&lt;/h1&gt; </span>
+                        <span class="codigo-text">&lt;p&gt;Soy un Parrafo&lt;/p&gt; </span>
+                        <br>
+                        <span class="codigo-text">&lt;/body&gt;</span>
+                        <span class="codigo-text">&lt;/html&gt;</span>
+                    </div>
+                    <img src="./img/img_notepad.png" alt="Ejemplo  basico de html en un bloc de notas">
+
+                    <h3 class="mb-1">Paso 2: guardar el archivo</h3>
+                    <p class="mb-1">Presione Ctrl + s para guardar y póngale de nombre: index y la extensión HTML
+                        (También se puede htm no cambia nada, pero recomiendo usar HTML es mucho más común de ver).</p>
+                    <img src="./img/img_saveas.png" alt="Guardando la pagina en el bloc de notas" class="mb-1">
+
+                    <h3 class="mb-1">Paso 3: Ver la pagina web</h3>
+                    <p class="mb-1">El código que colocaste en el bloc de notas deben ser parecido a esto</p>
+                    <img src="./img/img_chrome.png" alt="visualizando la pagina web del bloc de notas" class="mb-1">
+                    <p>Con esto si podemos Ver todas las paginas que estemos escribiendo. A lo largo del curso
+                        Cambiaremos a otro editor de texto mucho mas potente pero por los momentos usaremos el Bloc de
+                        Notas.</p>
+
+                    <div class="title-section">
+                        <h2>Atributos HTML</h2>
+                    </div>
+                    <p>Los atributos proporcionan informacion adicional a una etiqueta html</p>
+                    <br>
+                    <p>En este capítulo vamos a ver algunos de los atributos más comunes</p>
+                    <h3 class="mt-1">Atributo href</h3>
+                    <p>La etiqueta &lt;a&gt; define un hipervinculo. El atributo <mark>href</mark> especifica la URL de
+                        la pagina a la que va el enlace</p>
+                    <br>
+                    <p>Ejemplo:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;a href="https://www.youtube.com/"&gt;Link de
+                            google&lt;/a&gt;</span>
+                    </div>
+                    <h3>El atributo src</h3>
+                    <p>La etiqueta <mark>&LT;img&gt;</mark> se utiliza para incrustar una imagen en una pagina HTML. El
+                        <mark>src</mark> el atributo especifica la ruta a la imagen que se mostrara:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;img src="img/image.jpg"&gt;</span>
+                    </div>
+                    <p class="mb-1">Hay dos formas de especificar la URL en el atributo <mark>src</mark></p>
+                    <ol>
+                        <li> <b>URL absoluta</b> : enlaces a una imagen externa alojada en otro sitio web. Ejemplo: src
+                            ="https://fonts.google.com/specimen/Roboto"</li>
+                        <br>
+                        <li><b>URL relativa</b>: enlaces a una imagen alojada en el sitio web. Aquí, la URL no incluye
+                            el nombre de dominio. Si la URL comienza sin una barra, será relativa a la página actual.
+                            Ejemplo: src ="img_tarea.jpg".Si la URL comienza con una barra, será relativa al dominio.
+                            Ejemplo: src = "/ images / img_tarea.jpg".</li>
+                    </ol>
+                    <p class="mb-1"><b>Sugerencia:</b> Casi siempre es mejor usar las URL relativas. No se romperan al
+                        cambiar de
+                        dominio.</p>
+                    <h3>El atributo alt</h3>
+                    <p class="mb-1">El atributo alt requerido para la etiqueta &lt;img&gt;. Especifica un texto
+                        alternativo
+                        Esto sirve cuando el usuario tiene una conexión lenta o hay un problema con el atributo src.
+                        Ejemplo:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;img src="mouse.jpg" alt="La imagen de un raton de
+                            computadora"&gt;</span>
+                    </div>
+                    <img src="mouse.jpg" alt="La imagen de un raton de computadora">
+
+                    <h3>El atributo Style</h3>
+                    <p>El atributo Style sirve para dar estilos o mejor dicho darle css en línea. lo que es igual a
+                        cambiar el color, el tamaño de la letra, el color del fondo, y una larga lista más de estilos
+                        (Hay que aclarar que estos estilos que se dan con el atributo Style. Son css en línea cuando
+                        estemos aprendiendo css a fondo explicare esto de una mejor manera).
+                    </p>
+                    <br>
+                    <p class="mb-1">Ejemplo:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text"> &lt;p style="color: red; font-size: 30px;"&lt;/p&gt;</span>
+                    </div>
+                    <p style="color: red; font-size: 30px;">Resultado del Ejemplo</p>
+
+                    <h3 class="mt-1">El atributo lang</h3>
+                    <p>Siempre debe incluir el atributo lang dentro de la etiqueta &lt;html&gt;, para declarar el idioma
+                        de la
+                        página web. Esto está destinado a ayudar a los motores de búsqueda y navegadores.</p>
+                    <br>
+                    <p class="mb-1">El siguiente ejemplo especifica el inglés como idioma:</p>
+                    <div class="codigo mb-1">
+                        <span class="codigo-text">&lt;!DOCTYPE html&gt;</span>
+                        <span class="codigo-text">&lt;html lang="en"&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;head&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;title&gt;&lt;/title&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;/head&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;body&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;/body&gt;</span>
+                        <br>
+                        <span class="codigo-text">&lt;/html&gt;</span>
+                    </div>
+                </div>
+                <p class="mb-1">Los códigos de país también se pueden agregar al código de idioma en el atributo
+                    <mark>lang</mark>.
+                    Entonces, los
+                    dos primeros caracteres definen el idioma de la página HTML y los dos últimos caracteres definen el
+                    país.</p>
+                <p class="mb-1">El siguiente ejemplo especifica inglés como idioma y Estados Unidos como país:</p>
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;!DOCTYPE html&gt;</span>
+                    <span class="codigo-text">&lt;html lang="en-US"&gt;</span>
+                    <br>
+                    <span class="codigo-text">&lt;head&gt;</span>
+                    <br>
+                    <span class="codigo-text">&lt;title&gt;&lt;/title&gt;</span>
+                    <br>
+                    <span class="codigo-text">&lt;/head&gt;</span>
+                    <br>
+                    <span class="codigo-text">&lt;body&gt;</span>
+                    <br>
+                    <span class="codigo-text">&lt;/body&gt;</span>
+                    <br>
+                    <span class="codigo-text">&lt;/html&gt;</span>
+                </div>
+
+                <h3>Códigos de idioma ISO 639-1</h3>
+                <p>ISO 639-1 define abreviaturas para idiomas:</p>
+                <br>
+                <p>Algunos ejemplos son:</p>
+                <ol class="ml-1 mt-1">
+                    <li>Italiano = it</li>
+                    <li>Japones = ja</li>
+                    <li>koreano = ko</li>
+                    <li>Ruso = ru</li>
+                    <li>inglés = en</li>
+                    <li>Español = es</li>
+                    <li>Chino = zh</li>
+                    <li>Alemán = de</li>
+                    <li>Portugués = pt</li>
+                </ol>
+
+                <h3>Códigos de país ISO</h3>
+                <ol class="ml-1 mt-1">
+                    <li>Italia = IT</li>
+                    <li>Japon = JP</li>
+                    <li>Korea = KP</li>
+                    <li>Russia = RU</li>
+                    <li>Estados Unidos = US</li>
+                    <li>Venezuela = VE / Mexico = MX / Peru = PE / Panama = PA / Ecuador = EC / Argentina = AR / Chile
+                        = CL
+                    </li>
+                    <li>China = CN</li>
+                    <li>Alemenia = DE</li>
+                    <li>Portugal = PT / Brasil = BR</li>
+                </ol>
+
+                <h3>El atributo del título</h3>
+                <p>El atributo <mark>title</mark> define información adicional sobre un elemento.</p>
+                <p class="mt-1 mb-1">El valor del atributo de título se mostrará como información sobre herramientas
+                    cuando
+                    pase el mouse
+                    sobre el elemento:</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text"> &lt;p title = "Soy una etiqueta p puedo mostrar texto"&gt;Ejemplo del
+                        atributo title&lt;/p&gt;</span>
+                </div>
+                <p title="Soy una etiqueta p puedo mostrar texto">Ejemplo del
+                    atributo title</p>
+
+                <h3>Sugerencias</h3>
+
+                <p>En HTML no se distingue de mayúsculas o minúsculas pero lo más recomendable es escribirlo en
+                    minúsculas ya que casi s iempre el código estará en minúsculas (en mi experiencia no me encontrado
+                    con ninguna página web que tenga las etiquetas o atributos en mayúsculas),</p>
+
+                <p class=" mt-1 mb-1">Una Duda que puede surgir es si usar comillas dobles o simples y la respuesta es,
+                    que puedes usar las dos. Claro si un atributo tiene comillas Entonces se tienen que usar las dos
+                    ,aqui un ejemplo.</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text"> &lt;p title = "Mi nombre es 'Alvaro' "&gt;Mi nombre es
+                        Alvaro&lt;/p&gt;</span>
+                </div>
+
+                <p>O viceversa:</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text"> &lt;p title = 'Mi nombre es "Alvaro" '&gt;Mi nombre es
+                        Alvaro&lt;/p&gt;</span>
+                </div>
+
+                <div class="title-section">
+                    <h2>Pantalla HTML</h2>
+                </div>
+
+                <p class="mt-1 mb-1">No se puede estar seguro como se mostrará HTML. Las pantallas pequeñas o grandes
+                    hasta las ventanas pueden afectar como se ve el texto o los espacios. Con solo HTML no se puede
+                    cambiar la visualización agregando espacios o líneas adicionales al código HTML, el navegador
+                    eliminara automáticamente los espacios o líneas adicionales cuando se muestre la pagina web.</p>
+                <p>Aqui un Ejemplo:</p>
+
+                <img src="/img/ejemplo-texto-codigo.png" alt="" class="mt-1 mb-1">
+
+                <p>Este texto
+                    tiene muchas
+                    líneas de código
+                    adicional pero el
+                    navegador no las
+                    visualiza en lo absoluto.
+                </p>
+
+                <h3 class="mt-1 mb-1">Reglas horizontales HTML</h3>
+                <p>La etiqueta <mark>hr</mark> define un salto tematico en una pagina HTML y, con mayor frecuencia, se
+                    muestra como una regla horizontal</p>
+                <p>La etiqueta <mark>hr</mark> se utiliza para separar el contenido (o abrir un cambio) en una pagina
+                    HTML</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;h2&gt;Este es un titulo &lt;/h2&gt;</span>
+                    <span class="codigo-text">&lt;p&gt;Este es un párrafo&lt;/p&gt;</span>
+                    <span class="codigo-text">&lt;hr&gt;</span>
+                    <span class="codigo-text">&lt;h3&gt;Este es un titulo secundario&lt;/h3&gt;</span>
+                    <span class="codigo-text">&lt;p&gt;Este es un párrafo&lt;/p&gt;</span>
+                </div>
+
+                <h2>Este es un título</h2>
+                <p>Esté es un párrafo </p>
+                <hr>
+                <h4>Este es un titulo secundario</h4>
+                <p>Esté es un párrafo </p>
+
+                <p class="mt-1 mb-1">La etiqueta <mark>hr</mark> es una etiqueta vacía, lo que significa que no tiene
+                    etiqueta final.</p>
+                <h3 class="mt-1 mb-1">Saltos de línea HTML</h3>
+                <p>La etiqueta <mark>br</mark> define un salto de linea. Usalo cuando quieres dar un salto de linea sin
+                    tener que comenzar un nuevo párrafo, aqui un ejemplo:</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;p&gt;Este es un párrafo &lt;br&gt; que dice mi nombre y ese &lt;br&gt;
+                        es Alvaro
+                        &lt;/p&gt;</span>
+                </div>
+
+                <p>Este es un párrafo <br> que dice mi nombre y ese <br> es Alvaro</p>
+
+                <h3>El problema del poema</h3>
+                <p class="mt-1 mb-1">Este poema se mostrará en una sola línea:</p>
+                <img src="./img/problema-del-poemapng.png" alt="">
+
+                <h3>Solución: el elemento HTML &lt;pre&gt;</h3>
+                <p class="mt-1 mb-1">El elemento <mark>&lt;pre&gt;</mark> HTML define texto preformateado.</p>
+                <p>El texto dentro de un
+                    <mark>&lt;pre&gt;</mark> elemento se muestra en una fuente de ancho fijo (generalmente Courier) y
+                    conserva tanto los espacios como los saltos de línea:</p>
+                <pre class="mt-1 mb-1">
+                     My Bonnie lies over the ocean.
+
+                     My Bonnie lies over the sea.
+
+                     My Bonnie lies over the ocean.
+
+                     Oh, bring back my Bonnie to me.
+                </pre>
+
+                <div class="title-section">
+                    <h2>El atributo de estilo HTML</h2>
+                </div>
+                <p class="mt-1 mb-1">En este articulo vamos aver el atributo style que sirve para agregar css en linea a
+                    los elementos en
+                    HTML, la sintaxis seria esta:</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;p style="color: red;"&gt; Este parrafo tiene el color rojo
+                        &lt;/p&gt;</span>
+
+                    <span class="codigo-text">&lt;p style="color: blue;"&gt; Este parrafo tiene el color azul
+                        &lt;/p&gt;</span>
+
+                    <span class="codigo-text">&lt;p style="color: green;"&gt; Este parrafo tiene el color verde
+                        &lt;/p&gt;</span>
+
+                </div>
+
+                <div class="mt-1 mb-1">
+                    <p style="color: red;">Este parrafo tiene el color Rojo</p>
+                    <p style="color: blue;">Este parrafo tiene el color Azul</p>
+                    <p style="color: green;">Este parrafo tiene el color Verde</p>
+                </div>
+
+                <p class="mb-1">En este ejemplo se cambio el color de las letras a rojo azul y verde. Veamos otro
+                    Ejemplo.</p>
+
+                <h3>El color de fondo</h3>
+                <p class="mt-1 mb-1">En este ejemplo vamos a cambiar el color de fondo algunas etiquetas de HTML.</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;h2 style="background-color: red;"&gt; Este Encabezado tiene el color
+                        rojo
+                        &lt;/h2&gt;</span>
+                    <span class="codigo-text">&lt;p style="background-color: blue;"&gt; Este parrafo tiene el color azul
+                        &lt;/p&gt;</span>
+                    <span class="codigo-text">&lt;p style="background-color: green;"&gt; Este parrafo tiene el color
+                        verde
+                        &lt;/p&gt;</span>
+                </div>
+
+                <div class="mt-1 mb-1">
+                    <h2 style="background-color: red;">Este parrafo tiene el color Rojo</h2>
+                    <p style="background-color: blue;">Este parrafo tiene el color Azul</p>
+                    <p style="background-color: green;">Este parrafo tiene el color Verde</p>
+                </div>
+
+                <h3>Fuentes Con el atributo style</h3>
+                <p class="mb-1">La propiedad css font-family define la fuente que se utilizara en un elemento HTML, aqui
+                    un ejemplo.
+                </p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;p style="font-family:monospace;"&gt; Este parrafo tiene la fuente
+                        monospace
+                        &lt;/p&gt;</span>
+                    <span class="codigo-text">&lt;p style="font-family: sans-serif;"&gt; Este parrafo tiene la fuente
+                        sans-serif
+                        &lt;/p&gt;</span>
+                </div>
+
+                <div class="mt-1 mb-1">
+                    <p style="font-family:monospace;">Este parrafo tiene la fuente monospace</p>
+                    <p style="font-family: sans-serif;">Este parrafo tiene la fuente sans-serif</p>
+                </div>
+
+                <h3>Tamano del texto</h3>
+                <p class="mt-1 mb-1">La propiedad de css font-size define el tamaño de del texto en un elemento HTML,
+                    aqui un ejemplo.</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;p style="font-size: 200%;"&gt; Este parrafo tiene el tamaño de la
+                        fuente en un 200%&lt;/p&gt;</span>
+
+                    <span class="codigo-text">&lt;p style="font-size: 170%;"&gt; Este parrafo tiene el tamaño de la
+                        fuente en un 170%;
+                        &lt;/p&gt;</span>
+                </div>
+
+                <div class="mb-1">
+                    <p style="font-size: 200%;">Este parrafo tiene el tamaño de la fuente en un 200%</p>
+
+                    <p style="font-size: 170%;">Este parrafo tiene el tamaño de la
+                        fuente en un 170%;</p>
+                </div>
+
+                <h3>Alineación del texto</h3>
+                <p class="mt-1 mb-1">Con la propiedad css text-align podemo definer la Alineación de un texto en el
+                    centro izquierda y derecha, aqui un ejemplo:</p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;p style="text-align:center;"&gt; Este parrafo esta alineado al
+                        centro&lt;/p&gt;</span>
+
+                    <span class="codigo-text">&lt;p style="text-align: left"&gt; Este parrafo esta alineado a la
+                        izquierda
+                        &lt;/p&gt;</span>
+
+                    <span class="codigo-text">&lt;p style="text-align: right;"&gt; Este parrafo esta alineado a la
+                        derecha
+                        &lt;/p&gt;</span>
+                </div>
+
+                <div class="mb-1">
+                    <p style="text-align: right;">Este parrafo esta alineado a la derecha</p>
+
+                    <p style="text-align: left;">Este parrafo esta alineado a la
+                        izquierda</p>
+                    <p style="text-align: center;">Este parrafo esta alineado al
+                        centro</p>
+                </div>
+
+                <div class="title-section">
+                    <h2>Formatos de texto en HTML</h2>
+                </div>
+                <p class="mt-1 mb-1">HTML contiene varios elementos para definir texto con un significado espacial. Aqui
+                    una lista, y despues vamos a repasar cada uno y que significan.</p>
+                <h3>Elementos de formato HTML</h3>
+                <ul>
+                    <li>&lt;b&gt; - Texto en negrita</li>
+                    <li>&lt;strong&gt; - Texto importante</li>
+                    <li>&lt;i&gt; - Texto en cursiva</li>
+                    <li>&lt;em&gt; - Texto enfatizado</li>
+                    <li>&lt;mark&gt; - Texto marcado</li>
+                    <li>&lt;del&gt; - Texto eliminado</li>
+                    <li>&lt;ins&gt; - Texto insertado</li>
+                    <li>&lt;sub&gt; - Texto de subindice</li>
+                    <li>&lt;sup&gt; - Texto de superindice</li>
+                    <li>&lt;small&gt; - Texto más pequeño</li>
+                </ul>
+
+                <h3 class="mt-1 mb-1">HTML &lt;b&gt; y &lt;strong&gt; elementos</h3>
+                <p>El elemento <mark>&lt;b&gt; </mark> HTML define texto en negrita, sin ninguna importancia adicional.
+                </p>
+
+                <div class="codigo mb-1">
+                    <span class="codigo-text">&lt;b&gt; Este parrafo esta
+                        en negrita&lt;/b&gt;</span>
+                </div>
+                <p>El elemento <mark>&lt;strong&gt;</mark> define el texto con gran importancia. El contenido del
+                    interior se muestra normalmente en negrita.</p>
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;strong&gt; Este texto es mas importante &lt;/strong&gt;</span>
+                </div>
+
+                <h3>Elementos HTML &lt;i&gt; y &lt;em&gt;</h3>
+                <p class="mt-1 mb-1">El elemento <mark>&lt;i&gt;</mark> define una parte del texto en una voz o estado
+                    de ánimo alternativo. El contenido del interior se muestra normalmente en cursiva.</p>
+                <p class="mb-1"><strong>Consejo: la etiqueta <mark>&lt;i&gt;</mark></strong> se utiliza a menudo para
+                    indicar un
+                    término técnico, una frase de otro idioma, un pensamiento, el nombre de un barco, etc.</p>
+
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;i&gt;Este es un texto en italica&lt;/i&gt;</span>
+                </div>
+
+                <i>Este es un texto en italica</i>
+
+                <p class=" mt-1 mb-1">La etiqueta <mark>&lt;em&gt;</mark> define texto enfatizado. El contenido del
+                    interior se muestra normalmente en cursiva.</p>
+                <p class="mb-1"><strong>Consejo: un lector de pantalla pronunciara las palabras
+                        <mark>&lt;i&gt;</mark></strong> con énfasis, utilizando el estrés verbal.</p>
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;em&gt;Este es un texto con énfasis.&lt;/em&gt;</span>
+                </div>
+                <em>Este es un texto con énfasis.</em>
+
+                <h3 class=" mt-1 mb-1">Elemento &lt;small&gt;</h3>
+                <p>El elemento <mark>&lt;small&gt;</mark> define un un texto mas pequeño de lo normal aqui un ejemplo:
+                </p>
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;small&gt;Este es un texto muy pequeño.&lt;/small&gt;</span>
+                </div>
+                <small>Este es un texto muy pequeño.</small>
+
+                <h3>El elemento &lt;mark&gt;</h3>
+                <p class=" mt-1 mb-1">El elemento <mark>&lt;mark&gt;</mark> define el texto que se debe remarcar o
+                    resaltar, aqui un ejemplo</p>
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;mark&gt;Este es un texto esta resaltado.&lt;/mark&gt;</span>
+                </div>
+                <mark>Este es un texto esta resaltado.</mark>
+
+                <h3>Elemento &lt;del&gt;</h3>
+                <p class="mt-1">El elemento <mark>&lt;del&gt;</mark>define el texto que se ha eliminado de un documento.
+                    Los
+                    navegadores
+                    generalmente tacharán una línea a través del texto eliminado:</p>
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;p&gt;Este es un texto esta &lt;del&gt;tachado.&lt;/del&gt;
+                        &lt;/p&gt;</span>
+                </div>
+                <p>Este es un texto esta <del>tachado</del></p>
+
+                <h3>Elemento &lt;ins&gt;</h3>
+                <p class="mt-1 mb-1">El elemento <mark>&lt;ins&gt; define un texto que se ha insertado en un documento.
+                        Los navegadores suelen subrayar el texto insertado:</mark></p>
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;p&gt;Mi color favorito es &lt;del&gt;rojo&lt;/del&gt;
+                        &lt;ins&gt;azul&lt;/ins&gt;
+                        &lt;/p&gt;</span>
+                </div>
+                <p>Mi color favorito es <del>rojo</del> <ins>azul</ins></p>
+
+                <h3>Elemento &lt;sub&gt;</h3>
+                <p class="mt-1 mb-1"> El elemento <mark>&lt;sub&gt;</mark> El texto en subíndice aparece medio carácter
+                    debajo
+                    de la línea normal y, a veces, se representa en una fuente más pequeña. El texto de subíndice se
+                    puede utilizar para fórmulas químicas, como H 2 O:</p>
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;p&gt;Este es un texto &lt;sub&gt;subindice.&lt;/sub&gt;
+                        &lt;/p&gt;</span>
+                </div>
+                <p>Este es un texto <sub>subindice.</sub></p>
+
+                <h3>Elemento &lt;sup&gt;</h3>
+                <p class="mt-1 mb-1">El elemento <mark>&lt;sup&gt;</mark> define texto en superíndice. El texto en
+                    superíndice aparece medio carácter por encima de la línea normal y, a veces, se representa con una
+                    fuente más pequeña. El texto en superíndice se puede utilizar para notas al pie, como WWW
+                    <sup>[1]</sup>:</p>
+
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;p&gt;Este es un texto &lt;sup&gt;superindice.&lt;/sup&gt;
+                        &lt;/p&gt;</span>
+                </div>
+                <p>Este es un texto <sup>superindice</sup>.</p>
+
+                <div class="title-section">
+                    <h2>Elementos de citas y citas HTML</h2>
+                </div>
+
+                <h3>El elemento <mark>&lt;blockquote&gt; para cotizaciones</mark></h3>
+                <p class="mt-1 mb-1">La etiqueta <mark>&lt;blockquote&gt;</mark> define una seccion que se cita de tra
+                    fuente
+                </p>
+                <p>Los navegadores suelen darle una sangria a los <mark>&lt;blockquote&gt;</mark></p>
+
+
+                <div class="codigo mb-1 mt-1">
+                    <span class="codigo-text">&lt;p&gt;Este texto viene de la pagina WWW3&lt;/p&gt;</span>
+                    <span class="codigo-text mt-1">&lt;blockquote cite="https://www.w3schools.com"&gt;Lorem ipsum dolor
+                        sit
+                        amet,
+                        consectetur adipisicing elit. Nam suscipit, quam dolorum dicta accusantium enim velit vitae iure
+                        dolorem tempore. Doloribus impedit saepe voluptate ipsum rerum, culpa debitis deleniti
+                        quisquam.&lt;/blockquote&gt;</span>
+                </div>
+
+                <div class="title-section">
+                    <h2>Comentarios HTML</h2>
+                </div>
+
+                <h3>Etiqueta de comentario HTML</h3>
+                <p>Para agregar un comentario a tu codigo seria de la siguente manera.</p>
+                <img src="./img/Comentario-1.png" alt="Es un Comentario en html" class="mt-1 mb-1">
+                <p class="mb-1">Observe que hay un signo de exclamación (!) En la etiqueta inicial, pero no en la
+                    etiqueta final.</p>
+                <p><b>Nota:</b>Los navegadores no muestra los comentarios pero pueden ducumentar su codigo.</p>
+                <h3>Ocultar contenido HTML</h3>
+                <img src="./img/Comentario-2.png" alt="">
+
+                <h3>Comentarios de Lineas</h3>
+                <p class="mt-1 mb-1">Los comentarios pueden abarca mas de una sola linea de codigo. Aqui un ejemplo:</p>
+                <img src="./img/Comentario-3.png" alt="">
+                <p class="mt-1 mb-1">Los comentarios tambien pueden Ocultar elementos en linea un ejemplo:</p>
+                <img src="./img/Comentario-4.png" alt="">
+
+                <div class="title-section">
+                    <h2>Colores HTML</h2>
+                </div>
+                <p class="mt-1 mb-1">Los colores HTML se especifican con nombres de colores predefinidos o con valores
+                    RGB, HEX, HSL, RGBA
+                    o HSLA.</p>
+                <h3 class="mt-1 mb-1">Nombres de colores</h3>
+                <p class="mb-1">En HTML, se puede especificar un color mediante el uso de un nombre de color:</p>
+                <div style="display: flex;">
+                    <div
+                        style="background-color: tomato; width: 100px; height: 100px; margin-right: 20px; text-align: center; padding: 2rem 0rem;">
+                        <p>tomato</p>
+                    </div>
+                    <div
+                        style="background-color: orange; width: 100px; height: 100px;  margin-right: 20px; text-align: center; padding: 2rem 0rem;">
+                        <p>orange</p>
+                    </div>
+                    <div
+                        style="background-color: dodgerblue; width: 100px; height: 100px;  margin-right: 20px; text-align: center; padding: 2rem 0rem;">
+                        <p>dodgerblue</p>
+                    </div>
+                    <div
+                        style="background-color: MediumSeaGreen; width: 150px; height: 100px;  margin-right: 20px; text-align: center; padding: 2rem 0rem;">
+                        <p>MediumSeaGreen</p>
+                    </div>
+                    <div
+                        style="background-color: gray; width: 100px; height: 100px;  margin-right: 20px; text-align: center; padding: 2rem 0rem;">
+                        <p>gray</p>
+                    </div>
+                    <div
+                        style="background-color: SlateBlue; width: 100px; height: 100px;  margin-right: 20px; text-align: center; padding: 2rem 0rem;">
+                        <p>SlateBlue</p>
+                    </div>
+                    <div
+                        style="background-color: Violet; width: 100px; height: 100px;  margin-right: 20px; text-align: center; padding: 2rem 0rem;">
+                        <p>Violet</p>
+                    </div>
+                    <div
+                        style="background-color: LightGray; width: 100px; height: 100px; text-align: center; padding: 2rem 0rem;">
+                        <p>LightGray</p>
+                    </div>
+                </div>
+
+                <p class="mt-1 mb-1">HTML admite 140 nombres de colores estándar .</p>
+
+                <h3>Color de fondo</h3>
+                <p class="mb-1">Puede establecer el color de fondo de los elementos HTML:</p>
+
+                <h4
+                    style="background-color: dodgerblue; width: 650px; height: 50px; padding-top: 12px; text-align: center;">
+                    Hola Mundo</h4>
+                <p style="background-color: tomato; padding: 1rem 0rem;" class="mt-1 mb-1">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Ratione
+                    placeat quam, eum at ipsa minima
+                    repellat culpa inventore iste? Dolorem rerum magni laudantium illum aliquid saepe voluptatem qui.
+                    At, corrupti!</p>
+                <img src="./img/Colores-fondo.png" alt="" class="mb-1">
+
+                <h3>Color Texto</h3>
+                <p class="mt-1 mb-1">Puede establecer el color del texto:</p>
+
+                <h4 style="color: red; font-size: 28px;">Hola mundo</h4>
+
+                <p style="color: dodgerblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                    praesentium, amet cupiditate porro deleniti pariatur quibusdam, ipsa ad non repudiandae illum!
+                    Exercitationem ipsam dicta quasi ab. Amet deserunt quibusdam commodi!</p>
+
+                <p class="mt-1 mb-1" style="color: mediumseagreen;">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Aut minus excepturi, velit est alias aperiam eligendi id consequuntur libero vel in cumque
+                    facilis voluptatum ex exercitationem harum, reprehenderit ad dolorum!</p>
+
+                <img src="./img/Colores-texto.png" alt="">
+
+                <h3>Color del borde</h3>
+                <p class="mt-1 mb-1">Puede establecer el color de los bordes:</p>
+
+                <h4 style="border:  1px solid tomato;">Hola mundo</h4>
+                <h4 style="border: 1px solid mediumseagreen;">Hola mundo</h4>
+                <h4 style="border: 1px solid dodgerblue;">Hola mundo</h4>
+
+                <img src="./img/Colores-bordes.png" alt="" class="mt-1">
+
+                <h3>Valores de color</h3>
+                <p class="mt-1 mb-1">En HTML, los colores también se pueden especificar utilizando valores RGB, valores
+                    HEX, valores HSL,
+                    valores RGBA y valores HSLA.
+                </p>
+
+                <h4 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h4>
+                <h4 style="background-color:#ff6347;" class="mt-1">#ff6347</h4>
+                <h4 style="background-color:hsl(9, 100%, 64%);" class="mt-1">hsl(9, 100%, 64%)</h4>
+                <img src="./img/Colores-valores.png" alt="" class="mt-1 mb-1">
+
+                <h4 style="background-color:rgba(255, 99, 71, 0.5);" class="mb-1">rgba(255, 99, 71, 0.5)</h4>
+
+                <h4 style="background-color:hsla(9, 100%, 64%, 0.5);" class="mb-1">hsla(9, 100%, 64%, 0.5)</h4>
+
+                <img src="./img/Colores-valores-rgba.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
